@@ -23,8 +23,18 @@ window.dir2Slider=dir2Slider;
 	// boxControl		: "true", "false"
 	// autoSlideTime	: 2
 	//********************
-	function dir2Slider(path, fileExtension, height, width, slideNumbers, arrowKeyControl, boxControl, autoSlideTime) {
+	function dir2Slider(options) {
 		// Parameter
+		path = options.path;
+		fileExtension = options.fileExtension;
+		height = options.height;
+		width = options.width;
+		slideNumbers = options.slideNumbers;
+		arrowKeyControl = options.arrowKeyControl;
+		boxControl = options.boxControl;
+		autoSlideTime = options.autoSlideTime;
+		
+		// Default Parameter
 		if(typeof(path)==='undefined') path = "img/";
 		if(typeof(fileExtension)==='undefined') fileExtension = ".jpg";
 		if(typeof(height)==='undefined') height = 400;
