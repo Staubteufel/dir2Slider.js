@@ -4,7 +4,7 @@
 // >!!! jQuery is required !!!<
 //
 // Example usage:
-//	dir2Slider("http://www.example.com/img", ".jpg", 600, 800);
+//		dir2Slider("http://www.example.com/img", ".jpg", 600, 800);
 //****************************************
 (function($) {
 window.dir2Slider=dir2Slider;
@@ -73,7 +73,12 @@ window.dir2Slider=dir2Slider;
 			$("#dir2Slider").css({
 				"width" : width,
 				"height" : height,
-				"background-color" : "#E6E6E6"
+				"background-color" : "#E6E6E6",
+				"user-select" : "none",
+				"-webkit-user-select" : "none",
+				"-moz-user-select" : "none",
+				"-o-user-select" : "none",
+				"-ms-user-select" : "none"
 			});
 		}
 		
@@ -106,7 +111,11 @@ window.dir2Slider=dir2Slider;
 				"width" : width,
 				"height" : height,
 				"z-index" : "1",
-				"user-select" : "none"
+				"user-select" : "none",
+				"-webkit-user-select" : "none",
+				"-moz-user-select" : "none",
+				"-o-user-select" : "none",
+				"-ms-user-select" : "none"
 			});
 			$("#img" + imgNum).hide();
 			
@@ -130,7 +139,12 @@ window.dir2Slider=dir2Slider;
 				"background-color" : "#CCCCCC",
 				"opacity" : 0,
 				"color" : "#B3B3B3",
-				"z-index" : "2"
+				"z-index" : "2",
+				"user-select" : "none",
+				"-webkit-user-select" : "none",
+				"-moz-user-select" : "none",
+				"-o-user-select" : "none",
+				"-ms-user-select" : "none"
 			});
 			$("#leftBox").hover(function() {
 				$("#leftBox").css("opacity", 0.3);
@@ -148,7 +162,12 @@ window.dir2Slider=dir2Slider;
 				"background-color" : "#CCCCCC",
 				"opacity" : 0,
 				"color" : "#B3B3B3",
-				"z-index" : "2"
+				"z-index" : "2",
+				"user-select" : "none",
+				"-webkit-user-select" : "none",
+				"-moz-user-select" : "none",
+				"-o-user-select" : "none",
+				"-ms-user-select" : "none"
 			});
 			$("#rightBox").hover(function() {
 				$("#rightBox").css("opacity", 0.3);
@@ -223,7 +242,12 @@ window.dir2Slider=dir2Slider;
 				"text-align" : "center",
 				"color" : "#7F7F7F",
 				"z-index" : 2,
-				"font-size" : (800 + 1200) / 100
+				"font-size" : (800 + 1200) / 100,
+				"user-select" : "none",
+				"-webkit-user-select" : "none",
+				"-moz-user-select" : "none",
+				"-o-user-select" : "none",
+				"-ms-user-select" : "none"
 			});
 		}
 		
