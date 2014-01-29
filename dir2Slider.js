@@ -62,7 +62,7 @@ window.dir2Slider=dir2Slider;
 		if(arrowKeyControl)
 			addArrowKeyControl();
 		
-		if(autoSlideTime)		
+		if(autoSlideTime != 0)		
 			autoSlide(autoSlideTime);
 		
 		
